@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>lists</title>
+</head>
+<body>
+<ol>
+<li>Apple</li>
+<li>Banana</li>
+<li>Peaches</li>
+<li>Oranges</li>
+<li>Mangos</li>
+</ol>
+
+<ul>
+<li>Apple</li>
+<li>Banana</li>
+<li>Peaches</li>
+<li>Oranges</li>
+<li>Mangos</li>
+</ul>
+
+</body>
+</html>
