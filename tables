@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>tables</title>
+</head>
+<body>
+<table border>
+<tr>
+<th>sr.number</th>
+<th>name</th>
+<th>grade</th>
+</tr>
+<tr>
+<td>1</td>
+<td>alex</td>
+<td>6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>areena</td>
+<td>8</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>ryne</td>
+    <td>5</td>
+</tr>
+</table>
+
+
+</body>
+</html>
