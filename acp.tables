@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>tables.acp</title>
+</head>
+<body>
+<table border>
+    <tr>
+<th>fruits</th>
+<th>vegtables</th>
+<th>drinks</th>
+    </tr>
+    <tr>
+<td>apple</td>
+<td>potato</td>
+<td>Orange juice</td>
+    </tr>
+    <tr>
+<td>watermelon</td>
+<td>beans</td>
+<td>mango juice</td>
+    </tr>
+    <tr>
+<td>blackberry</td>
+<td>cucumber</td>
+<td>milk</td>
+    </tr>
+</table>
+
+</body>
+</html>
