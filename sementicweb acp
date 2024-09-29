@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>semantic website acp</title>
+    </head>
+    <body>
+        <h2>Navigation</h2>
+        <nav></nav>
+        <ul>
+            <li><a href="https://unsplash.com/s/photos/bird">Pictures of birds</a>
+            </li>
+            <Li><a href="https://8billiontrees.com/animals/types-of-birds/">Species of birds</a></Li>
+            <li><a href="https://8billiontrees.com/animals/types-of-birds/">Info about them</a></li>
+        </ul>
+        <main>
+            <section>
+                <article>
+                    <h2>SOME INFO ABOUT BIRDS</h2>
+                    <p>
+                      <i>  Birds are a group of warm-blooded vertebrates constituting the class Aves (/ˈeɪviːz/), characterised by feathers,
+                        toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet
+                        lightweight skeleton. Birds live worldwide and range in size from the 5.5 cm (2.2 in) bee hummingbird to the 2.8 m (9 ft
+                        2 in) common ostrich.</i>
+                    </p>
+                    </article>
+            <aside>
+                <P><i>There are over 11,000 living species, more than half of which are passerine, or "perching" birds. Birds have wings whose
+                development varies according to species; the only known groups without wings are the extinct moa and elephant birds.</i></P>
+            </aside>
+               <figure>
+                <center>
+                <img src="birds.jpg" height="200" width="300">
+                </center>
+               </figure>
+               </section>
+               </main>
+               <footer>
+                <mark>Contact info: wiki@gmail.ie</mark>
+               </footer>
+    </body>
+</html>
