@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>types of css</title>
+        <style>
+            h2{
+                color:rgb(127, 255, 131)
+            }
+        </style>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+        <hr>
+    
+        <h2>INTERNAL CSS</h2>
+        <hr>
+        <h1 style ="color : red";>Inline Css</h1>
+        <hr>
+        <h3>I am External Css</h3>
+    </body>
