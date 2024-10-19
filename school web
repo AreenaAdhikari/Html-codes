@@ -1,11 +1,25 @@
 <html>
     <head>
         <title>school web</title>
+<style>
+    h2 {
+        color: rgb(127, 255, 131)
+    }
+</style>
+    <link rel="stylesheet" href="style2.css"
+
+
+
     </head>
     <body>
-<b>Welcome to Ardscoil Muihre</b><br>
-<strong>Ardscoil Muihre is a secondary school in Ireland </strong><br>
-<i>Our school has these following facilitys: </i><br>
+<h1 style="color: rgb(127, 153, 255);" >Welcome to Ardscoil Muiher</h1>
+<center>
+<img src="asm.png" alt=this is a image of our logo width="200" height="100" </center>
+<center>
+<h2>Ardscoil Muihre is a secondary school in Ireland </h2></center>
+
+   
+<h3>Our school has these following facilitys: </h3>
 <em>
     computer room and chrome book trolleys.
     Science Rooms.
@@ -14,8 +28,12 @@
     Music Room.
     Canteen – serving hot and cold food.
 </em><br>
+<center>
+    <video height="200" width="200" controls  autoplay poster="SampleVideo_1280x720_1mb.mp4" <source
+        src="SampleVideo_1280x720_1mb.mp4" type="mp4"><br>
+</center>
 <mark>Contact us :061349014</mark><br>
-<del>No uniforms needed</del><br>
+
 
 
     </body>
