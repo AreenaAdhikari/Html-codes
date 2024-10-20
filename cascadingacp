@@ -1,0 +1,16 @@
+<html>
+    <head>
+<style>
+    #grad1{
+        height: 400;
+background-color: aquamarine;/*for browsers that do not support gradients*/
+background-image: linear-gradient(to right,rgb(129, 183, 28),rgb(126, 241, 126),blue,rgb(249, 6, 6),rgb(255, 234, 0));
+    }
+
+
+</style>
+    </head>
+    <div id="grad1" style="text-align: center;">
+        Welcome to codingal
+        </div>
+</html>
