@@ -10,7 +10,7 @@ a:hover{
     color: red;
 }
 a{
-    color: green;
+    color: rgb(41, 0, 128);
     text-decoration: none;
 }
 ul>li{
@@ -38,5 +38,5 @@ a::after{
 }
 p::first-letter{
     font-size: 200%;
-    color:black;
+    color:rgb(16, 180, 225);
 }
