@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>types of css acp</title>
+    <style>
+        h2{
+            color: rgb(6, 243, 255);
+        }
+
+    </style>
+<link rel="stylesheet" href="style2.css"
+    </head>
+    <body>
+      <hr>
+      <h2>Internal css</h2> 
+      <hr>
+      <h3 style="color:rgb(119, 255, 0)";>I am inline css</h3>
+      <hr>
+      <h3>I am external css</h1>
+        <hr>
+
+    </body>
+</html>
