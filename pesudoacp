@@ -1,0 +1,18 @@
+<html>
+    <head>
+<link rel="stylesheet" href="style3.css" type="text/css" />
+    </head>
+    <body>
+        <h1>Welcome to sunwears</h1>
+        <ul>
+            <li>normal eye wear</li>
+            <Li>sun glases</Li>
+            <li>sun glasse with shades and power of normal glasses</li>
+        </ul>
+        <p>sun glases are a power source</p>
+        <p>there is nothing to be asmed of wearing eye wear</p>
+        <a href="#">check your latest product</a><br>
+        <a href="#">see the major discounts</a><br>
+        <a href="#">the current and after price</a>
+    </body>
+    </html>
