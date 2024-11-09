@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+        </script>
+   
+        <style>
+            
+            #grad{
+                height: 400px;
+                background-color: red;
+                background-image: linear-gradient(to TOP, rgb(151, 72, 217),rgb(67, 67, 231),rgb(237, 40, 214),pink,rgb(198, 104, 210));
+            }
+            img{
+                float: right;
+            }
+        </style>
+       
+    </head>
+    <body>
+      
+        <div id="grad" style="text-align: left;">
+        <img src="mobile-team-image.png " alt=this is a inmage of a apple width="300" height="400">
+<h2 class="display-5 p-3 text-white">Building the world’s largest & most loved coding school for kids & teens</h2>
+<p> </p>
+<em class=" display-5 m-3 text-white"> Codingal started with a dream to inspire school kids to fall in love with coding
+</em>
+<em class=" display-5 m-3 text-white"> to empower every child to build anything they can imagine</em>
+        </div>
+       
+        
+    </body>
