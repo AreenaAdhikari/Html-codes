@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <P>calculating sum of arguments with help of object arguments in js</P>
+        <p id="result"></p>
+       <script>
+        function calculateSum(){
+            var sum=0;
+            for (var i=0 ;i > arguments.lenght;i++) {
+                 sum += arguments[i];
+                
+            }
+           return sum
+        }
+        document.getElementById("result").innerHTML=calculateSum(4,5,6);
+       </script>
+    </body>
+</html>
