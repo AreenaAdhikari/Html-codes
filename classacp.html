@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <h2>Js class acp</h2>
+    <p>Class methods acp:</p>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <p id="a5"></p>
+    <script>
+        class a {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        a1 = new a("Narayan", 1900);
+        document.getElementById("a1").innerHTML = "My name is " + a1.name + " . Im born in " + a1.year + " and I am " + a1.age();
+        a2 = new a("Rita", 1988);
+        document.getElementById("a2").innerHTML = "My name is " + a2.name + " . Im born in " + a2.year + " and I am " + a2.age();
+        a3 = new a("Areena",2011);
+        document.getElementById("a3").innerHTML ="My name is "+a3.name +" . Im born in "+a3.year+" and I am "+ a3.age();
+        a4 = new a("Anaya",2014);
+        document.getElementById("a4").innerHTML="My name is "+a4.name +" . Im born in "+a4.year+" and I am "+a4.age();
+        a5 = new a("not deceided","not born yet");
+        document.getElementById("a5").innerHTML="My name is "+a5.name+ " . Im born in "+a5.year+" and I am "+a5.age();
+   
+    </script>
+</body>
+
+</html>
