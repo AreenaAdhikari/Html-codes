@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>activity 1</title>
+    </head>
+    <body>
+        <h2>JavaScript eRROR HANDELIMG</h2>
+        <p>this example shows us how to <b>Catch</b> an error </p>
+        <P id="error_message"></P>
+        <script>
+            try{
+                addalert("Welcome Guest");
+            }
+            catch(err){
+                document.getElementById("error_message").innerHTML=err.message;
+
+            }
+        </script>
+    </body>
+</html>
