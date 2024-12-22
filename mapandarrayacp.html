@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <P> Acp using arrays and maping in js</P>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="descending()">Descending order</button>
+        <p id="result"></p>
+        <p id="product_value"></p>
+        <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("result").innerHTML = points;
+            function ascending() {
+                points.sort(function (a, b) { return a - b });
+                document.getElementById("result").innerHTML = points;
+            }
+            function descending() {
+                points.sort(function (a, b) { return b - a });
+                document.getElementById("result").innerHTML = points;
+            }
+  
+        
+        
+           var numbers = [40, 100, 1, 5, 25, 10];
+            function myFunction(num){
+                return num *10;
+            }
+            var newarray= numbers.map(myFunction);
+            document.getElementById("product_value").innerHTML=newarray;
+
+        </script>
+        
+    </body>
+</html>
