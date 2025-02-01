@@ -36,6 +36,56 @@
             <a href="#">gallery</a>
             <a href="#">info</a>
         </div>
+
+       ction>
+    
+        <img class="mySlides" src="birds.jpg" style="height: 500px; width: 100%;">
+    
+        <img class="mySlides" src="apple.jpg" style="height: 500px; width: 100%;">
+    
+    </section>
+    
+    <script>
+
+        var myIndex = 0; // Index to track the current image
+
+        carousel(); // Start the carousel function
+
+        function carousel() {
+
+            var i;
+
+            var x = document.getElementsByClassName("mySlides"); // Get all images with class 'mySlides'
+
+            // Hide all images
+
+            for (i = 0; i < x.length; i++) {
+
+                x[i].style.display = "none";
+
+            }
+
+            // Increment index
+
+            myIndex++;
+
+            if (myIndex > x.length) {
+
+                myIndex = 1; // Reset to first image if the index exceeds the number of images
+
+            }
+
+            // Display the current image
+
+            x[myIndex - 1].style.display = "block";
+
+            // Set a timeout to call the carousel function again after 3 seconds
+
+            setTimeout(carousel, 3000);
+
+        }
+
+    </script>
     </body>
 </html>
 
