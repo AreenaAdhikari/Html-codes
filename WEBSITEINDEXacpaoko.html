@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>website</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color:dodgerblue;
+            }
+            .topnav a{
+                float: left;
+                text-align:center ;
+                color: darkblue;
+                padding: 14px 16px;
+                font-size: 17px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+            background-color: aliceblue;
+            color:black;
+            }
+            .topnav a:active{
+                background-color:cornsilk;
+                color:crimson;
+            }
+        </style>
+        <body>
+            <div class="topnav">
+                <a class="active" href="#home">home</a>
+                <a href="#">About Us</a>
+                <a href="#">Gallery</a>
+                <a href="#">Info</a>
+            </div>
+            <section>
+                <img class="mySlides" src="sunriseimg.jpg" style="height: 500px;width: 100%;">
+                <img class="mySlides" src="imagessunrise.jpeg" style="height: 500px;width:100%;">
+            </section>
+        <script>
+
+            var myIndex = 0; 
+            carousel(); 
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides"); 
+
+        for (i = 0; i < x.length; i++) {
+
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+
+                    myIndex = 1; 
+
+                }
+             x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+
+            }
+
+        </script>
+           
+        </body>
+    </head>
+</html>
