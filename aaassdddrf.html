@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EXtra Acp</title>
+    <style>
+        .carousel-text {
+            position: absolute;
+            top: 23%;
+            left: 22%;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+        }
+        p{
+            font-size: 12px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        
+
+        .carousel-text button {
+           
+            
+            margin: 10px auto 0;
+           
+            padding: 8px 16px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="carousel-container">
+        <!-- Slide 1 with text and button -->
+        <div class="mySlides">
+            <img src="gradient red.jpeg" style="height: 500px; width: 100%;">
+            <div class="carousel-text">
+                <h1>Welcome to our service</h1>
+                <p>This is the future of online expireience</p>
+                <button>Learn more</button>
+            </div>
+        </div>
+
+        <!-- Slide 2 with text and button -->
+        <div class="mySlides">
+            <img src="gradient red nice bith are.jpeg" style="height: 500px; width: 100%;">
+            <div class="carousel-text">
+                <h1>Welcome to our service</h1>
+                <p>This is the future of online expireience</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var myIndex = 0; // Index to track the current slide
+
+        carousel(); // Start the carousel function
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides"); // Get all slides
+
+            // Hide all slides
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            // Increment index
+            myIndex++;
+
+            if (myIndex > x.length) {
+                myIndex = 1; // Reset to first slide if the index exceeds the number of slides
+            }
+
+            // Display the current slide
+            x[myIndex - 1].style.display = "block";
+
+            // Set a timeout to call the carousel function again after 3 seconds
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+    <div style="width: 100%;">
+        <div style="width: 50%; height: 100px; float: left; background: white; border: 3px solid black;">
+            <center>
+                <h1>Feature One</h1>
+            </center>
+        </div>
+        <div style="margin-left: 50%; height: 100px; background: white; border: 3px solid black;">
+            <center>
+                <h1>Feature Two</h1>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+</html>
