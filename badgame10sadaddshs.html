@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickman Dash</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .game-container {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            background-color: #fff;
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+
+        #stickman {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            width: 20px;
+            height: 50px;
+            background-color: #000;
+        }
+
+        #obstacle {
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            /* Start off-screen */
+            width: 20px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <div id="stickman"></div>
+        <div id="obstacle"></div>
+    </div>
+    <script>
+        const stickman = document.getElementById('stickman');
+        const obstacle = document.getElementById('obstacle');
+        let isJumping = false;
+
+        // Move the obstacle
+        function moveObstacle() {
+            let obstaclePosition = parseInt(window.getComputedStyle(obstacle).getPropertyValue('right'));
+            if (obstaclePosition > 800) {
+                obstacle.style.right = '-20px'; // Reset obstacle position
+            } else {
+                obstacle.style.right = (obstaclePosition + 5) + 'px'; // Move obstacle to the left
+            }
+        }
+
+        // Jump function
+        function jump() {
+            if (isJumping) return;
+            isJumping = true;
+            let jumpHeight = 0;
+            let upInterval = setInterval(() => {
+                if (jumpHeight >= 100) {
+                    clearInterval(upInterval);
+                    let downInterval = setInterval(() => {
+                        if (jumpHeight <= 0) {
+                            clearInterval(downInterval);
+                            isJumping = false;
+                        }
+                        jumpHeight -= 5;
+                        stickman.style.bottom = jumpHeight + 'px';
+                    }, 20);
+                }
+                jumpHeight += 5;
+                stickman.style.bottom = jumpHeight + 'px';
+            }, 20);
+        }
+
+        // Check for collisions
+        function checkCollision() {
+            const stickmanBottom = parseInt(window.getComputedStyle(stickman).getPropertyValue('bottom'));
+            const obstacleRight = parseInt(window.getComputedStyle(obstacle).getPropertyValue('right'));
+
+            // Collision detection logic
+            if (
+                obstacleRight > 50 && // Obstacle is within the stickman's horizontal range
+                obstacleRight < 70 && // Obstacle is within the stickman's horizontal range
+                stickmanBottom < 50   // Stickman is not high enough to jump over the obstacle
+            ) {
+                alert('Game Over!');
+                obstacle.style.right = '-20px'; // Reset obstacle position
+            }
+        }
+
+        // Event listener for jumping
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') {
+                jump();
+            }
+        });
+
+        // Game loop
+        setInterval(() => {
+            moveObstacle();
+            checkCollision();
+        }, 20);
+    </script>
+</body>
+
+</html> 
